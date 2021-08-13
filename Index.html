@@ -1,0 +1,222 @@
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta charset="UTF-8">
+    <head>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo">QUONTO</a>
+            <div class="menu-toggle"></div>
+        <nav>
+            <ul style="list-style-type:none;">
+                <li><a href="#Home" class="active">Home</a></li>
+                <li><a href="#About" class="link">About</a></li>
+                <li><a href="#Quizzes" class="link">Quizzes</a></li>
+                <li><a href="#Contact-Us" class="link">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="clearfix"></div>
+        </header>
+        <a href="#" class="topbtn" data-aos="zoom-in"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
+        <h1 data-shadow='Quonto' id ="Home">Quonto</h1>
+          <script src="script.js" type="text/javascript"></script>
+          <script src="https://code.jquery.com/jquery-3.6.0.js"
+          integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+          crossorigin="anonymous"></script>
+          <script type="text/javascript">
+          $(document).ready(function(){
+                $('.menu-toggle').click(function(){
+                    $('.menu-toggle').toggleClass('active')
+                    $('nav').toggleClass('active') 
+                })
+          })
+        </script>
+        <div class="typewriter">
+            <h2>A website with more than 5 quizzes :)</h2>
+        </div>
+        <div class="first-svg">
+        <svg width="500" height="200" id="About">
+            <text x="300" y="125" text-anchor="middle">
+              <tspan id="l1">A</tspan>
+              <tspan id="l2">B</tspan>
+              <tspan id="l3">O</tspan>
+              <tspan id="l4">U</tspan>
+              <tspan id="l5">T</tspan>
+            </text>
+          </svg>
+        </div>
+        <p id="animated-text" data-aos="fade-up">
+            Quonto is a website where you can attempt numerous (6 to be precise) quizzes for free (yes, free). 
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus, architecto necessitatibus! Reicie
+            ndis, ex expedita omnis esse accusantium porro officiis assumenda animi. Odit nisi quaerat ea ipsa
+            laboriosam beatae dolorem expedita!
+        </p>
+        <script>
+            var animateText = document.getElementById("animated-text");
+            var textArray = animateText.innerText.split("");
+
+            animateText.firstChild.remove();
+
+            //Probably a better way to do this.
+            var elArray = textArray.map(
+            (letter,index)=>{
+                if(letter==" ") letter = '&nbsp;';
+                var el = document.createElement("p");
+                el.className = "letter";
+                el.innerHTML = letter;
+                el.style.animationDelay = index/(textArray.length)+"s";
+                animateText.appendChild(el);
+                return el;
+            }
+            );
+
+            animateText.innerHtml = elArray;
+        </script>
+        <div class="second-svg">
+            <svg width="525" height="200" id="About">
+                <text x="300" y="125" text-anchor="middle">
+                  <tspan id="l1">Q</tspan>
+                  <tspan id="l2">U</tspan>
+                  <tspan id="l3">I</tspan>
+                  <tspan id="l4">Z</tspan>
+                  <tspan id="l5">Z</tspan>
+                  <tspan id="l6">E</tspan>
+                  <tspan id="l7">S</tspan>
+                </text>
+              </svg>
+            </div>
+    <div class="quiz" id="Quizzes">
+    <div class="container" data-aos="flip-up"> 
+        <img src="https://images.pexels.com/photos/110854/pexels-photo-110854.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" />
+            <p class="title">Space quiz</p>
+                <div class="overlay"></div>
+                <div class="button"><a href="https://izma810.github.io/Space-Quiz-Index/Spaceindex.html" target="_blank"> Take quiz</a></div>
+    </div>
+    <div class="container" data-aos="flip-down">
+        <img src="https://www.xda-developers.com/files/2018/03/youtube-dark.png" alt="" />
+            <p class="title">Youtube Quiz</p>
+                <div class="overlay"></div>
+                <div class="button"><a href="https://izma810.github.io/Youtube-Quiz-Index/YoutubeIndex.html" target="_blank"> Take quiz </a></div>
+    </div>
+    <div class="container" data-aos="flip-right">
+        <img src="https://specials-images.forbesimg.com/imageserve/5efa33eed4034b0007bf4b5c/960x0.jpg?fit=scale" alt="" />
+            <p class="title">Harry Potter Quiz</p>
+                <div class="overlay"></div>
+                <div class="button"><a href="https://izma810.github.io/HarryPotter-Quiz-Index/Index.html" target="_blank">Take quiz</a></div>
+    </div>
+    </div>
+    <div class="quizzes">
+    <div class="container" data-aos="flip-right">
+        <img src="https://digiraver.com/wp-content/uploads/2020/01/japan.jpg" alt="" />
+            <p class="title">Countries Quiz</p>
+                <div class="overlay"></div>
+                <div class="button"><a href="https://izma810.github.io/Countries-Quiz-Index/Countries-Quiz-Index.html" target="_blank"> Take quiz</a></div>
+    </div>
+    <div class="container" data-aos="flip-down"> 
+        <img src="https://www.edmtunes.com/wp-content/uploads/2020/09/avicii-suicide.jpg" alt="" />
+            <p class="title">Singers Quiz</p>
+                <div class="overlay"></div>
+                <div class="button"><a href="https://izma810.github.io/Singers-Quiz-Index/Singers-Quiz-Index.html" target="_blank">Take quiz </a></div>
+    </div>
+    <div class="container" data-aos="flip-up">
+        <img src="https://www.airport-technology.com/wp-content/uploads/sites/14/2020/09/shutterstock_1152185600-1440x1008-1-857x600.jpg" alt="" />
+            <p class="title">Tech Quiz</p>
+                <div class="overlay"></div>
+                <div class="button"><a href="https://izma810.github.io/Tech-Quiz-Index/Tech-Quiz-Index.html" target="_blank"> Take quiz</a></div>
+    </div>
+    </div>
+    <div class="third-svg">
+        <svg width="540" height="200" id="Contact-Us">
+            <text x="300" y="125" text-anchor="middle">
+              <tspan id="l1">C</tspan>
+              <tspan id="l2">O</tspan>
+              <tspan id="l3">N</tspan>
+              <tspan id="l4">T</tspan>
+              <tspan id="l5">A</tspan>
+              <tspan id="l6">C</tspan>
+              <tspan id="l7">T</tspan>
+            </text>
+          </svg>
+        </div>
+    <div class="form">
+    <div class="contact-kijiye">
+        <p>Contact Us Here :)</p>
+        <div class="row input-container">
+            <div class="col-xs-12">
+              <div class="styled-input wide" data-aos="zoom-in">
+                <input type="text" required />
+                <label>Name</label> 
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <div class="styled-input" data-aos="zoom-in">
+                <input type="text" required />
+                <label>Email</label> 
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <div class="styled-input" style="float:right;" data-aos="zoom-in">
+                <input type="text" required />
+                <label>Phone Number</label> 
+              </div>
+            </div>
+            <div class="col-xs-12">
+              <div class="styled-input wide" data-aos="zoom-in">
+                <textarea required></textarea>
+                <label>Message</label>
+              </div>
+            </div>
+            <div class="col-xs-12">
+              <div class="btn-lrg submit-btn" >Send Message</div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="Finale">
+        Made with Love By Izma<br>
+        <div class="iconss">
+            <a href="https://github.com/Izma810" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+            <a href="https://www.youtube.com/channel/UC5rYNAWv-xq1et7jdVOKZJA/about" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></i></a>
+            <a href="mailto:izmahilalkhan08@gmail.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></i></a>
+        </div>
+    </div>
+    </body>
+</html>
